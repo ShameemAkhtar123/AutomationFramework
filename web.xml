@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TicketLake Test Automation Suite">
+    <listeners>
+        <listener class-name="main.utils.SuiteListener"/>
+        <listener class-name="main.utils.RetryListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="platform" value="WEB"/>
+    <parameter name="headless" value="false"/>
+    <parameter name="testLevel" value="method"/>
+    <parameter name="isAdmin" value="false"/>
+
+    <test name="TicketLake - WEB">
+
+        <groups>
+            <run>
+                <include name="WEB"/>
+            </run>
+        </groups>
+        <classes>
+
+            <!-- Movies -->
+<!--            <class name="test.Web.Movies.SearchBarMoviesTest"/>-->
+<!--            <class name="test.Web.Movies.UpComingMovies_MoviesTest"/>-->
+<!--            <class name="test.Web.Movies.TrendingMovies_MoviesTest"/>-->
+<!--            <class name="test.Web.Movies.TopMovies_MoviesTest"/>-->
+<!--            <class name="test.Web.Movies.SliderMoviesTest"/>-->
+<!--            <class name="test.Web.Movies.ShowingInCinemas_MoviesTest"/>-->
+
+<!--             Purchase Flow -->
+<!--            <class name="test.Web.PurchaseFlowMovies.MoviesPurchaseFlowTest"/>-->
+
+<!--             Movie Details Page -->
+<!--            <class name="test.Web.MoviesDetailPage.BasicInfoCard_MoviesDetailsTest"/>-->
+
+                       <class name="test.Web.Register.RegisterTest"/>
+<!--                        <class name="test.Web.Login"/>-->
+<!--                        <class name="test.Web.ForgetPassword"/>-->
+<!--                        <class name="test.Web.SocialLogins"/>-->
+<!--                        <class name="test.Web.Header"/>-->
+
+        </classes>
+
+    </test>
+</suite>
